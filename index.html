@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CYBERNEXUS — Enter the future. Redefine humanity. A premium futuristic cyborg and technology landing page.">
+  <meta name="keywords" content="Cybernexus, Cyborg, Futuristic Technology, AI, Robotics, Cybernetics, Quantum Computing, Techfest">
+  <meta name="theme-color" content="#050816">
+  <title>CYBERNEXUS // ENTER THE FUTURE. REDEFINE HUMANITY.</title>
+
+  <!-- Google Fonts: Orbitron, Rajdhani, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,5 93,28 93,72 50,95 7,72 7,28' fill='none' stroke='%2300F5FF' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='18' fill='%23A855F7'/%3E%3Ccircle cx='50' cy='50' r='8' fill='%2300F5FF'/%3E%3C/svg%3E">
+</head>
+<body>
+  <!-- Ambient Audio / Visual Atmosphere Background Canvas -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+  <div class="cyber-vignette" aria-hidden="true"></div>
+
+  <!-- ========================================================
+       SECTION A: NAVIGATION BAR
+       ======================================================== -->
+  <header class="navbar-header" id="header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo" aria-label="CYBERNEXUS Home">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <polygon points="22,3 41,13 41,31 22,41 3,31 3,13" stroke="currentColor" stroke-width="2" class="logo-hex"/>
+            <polygon points="22,9 35,16 35,28 22,35 9,28 9,16" stroke="#00F5FF" stroke-width="1.5" stroke-dasharray="3 3" class="logo-inner-hex"/>
+            <circle cx="22" cy="22" r="5" fill="#00F5FF" class="logo-core"/>
+            <circle cx="22" cy="22" r="10" stroke="#A855F7" stroke-width="1.5" class="logo-pulse-ring"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          CYBER<span class="highlight-cyan">NEXUS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item">
+          <a href="#hero" class="nav-link active"><span class="nav-num">01//</span> Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link"><span class="nav-num">02//</span> About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#technologies" class="nav-link"><span class="nav-num">03//</span> Technologies</a>
+        </li>
+        <li class="nav-item">
+          <a href="#experience" class="nav-link"><span class="nav-num">04//</span> Experience</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link"><span class="nav-num">05//</span> Contact</a>
+        </li>
+        <!-- Mobile-only CTA in menu -->
+        <li class="nav-item mobile-cta-item">
+          <a href="#contact" class="btn btn-outline-cyan btn-sm">EXPLORE NOW</a>
+        </li>
+      </ul>
+
+      <!-- Action Button (Desktop) -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline-cyan nav-cta-btn">
+          <span class="btn-glow"></span>
+          <span class="btn-text">EXPLORE NOW</span>
+          <svg class="btn-arrow-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <!-- Mobile Toggle Hamburger -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+          <span class="toggle-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Website Content -->
+  <main>
+    <!-- ========================================================
+         SECTION B: HERO SECTION
+         ======================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Left: Headline & Call To Action -->
+        <div class="hero-content">
+          <div class="cyber-badge fade-in">
+            <span class="badge-dot"></span>
+            <span class="badge-text">STATUS: SYNCHRONIZED // NEXUS PROTOCOL 2049</span>
+          </div>
+
+          <h1 class="hero-title fade-in">
+            THE FUTURE IS<br>
+            <span class="glitch-text" data-text="NO LONGER HUMAN.">NO LONGER HUMAN.</span>
+          </h1>
+
+          <p class="hero-description fade-in">
+            Discover a new dimension where artificial intelligence, robotics and human innovation merge to redefine the boundaries of possibility.
+          </p>
+
+          <div class="hero-cta-group fade-in">
+            <a href="#technologies" class="btn btn-primary">
+              <span class="btn-glow"></span>
+              <span class="btn-text">EXPLORE THE FUTURE</span>
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="none">
+                <path d="M4 10H16M16 10L10.5 4.5M16 10L10.5 15.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#experience" class="btn btn-glass">
+              <span class="btn-text">DISCOVER TECHNOLOGY</span>
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/>
+                <polygon points="9,7 13,10 9,13" fill="currentColor"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Hero Telemetry Micro-Data -->
+          <div class="hero-telemetry fade-in">
+            <div class="telemetry-item">
+              <span class="telemetry-label">NEURAL SYNC</span>
+              <span class="telemetry-value">99.8%</span>
+            </div>
+            <div class="telemetry-divider"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-label">QUANTUM CORE</span>
+              <span class="telemetry-value text-cyan">ONLINE</span>
+            </div>
+            <div class="telemetry-divider"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-label">SYSTEM LATENCY</span>
+              <span class="telemetry-value text-purple">&lt; 0.8ms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Central Cyborg Futuristic Visual Illustration -->
+        <div class="hero-visual-wrapper fade-in">
+          <div class="cyborg-hud-canvas">
+            <!-- Concentric Animated Gyroscope Rings -->
+            <div class="hud-ring hud-ring-outer"></div>
+            <div class="hud-ring hud-ring-mid"></div>
+            <div class="hud-ring hud-ring-inner"></div>
+            <div class="hud-radar-sweep"></div>
+
+            <!-- Central Cyborg SVG Illustration -->
+            <div class="cyborg-silhouette-container">
+              <svg class="cyborg-svg" viewBox="0 0 400 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background Ambient Glow -->
+                <defs>
+                  <linearGradient id="cyberGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.9"/>
+                    <stop offset="50%" stop-color="#397BFF" stop-opacity="0.8"/>
+                    <stop offset="100%" stop-color="#A855F7" stop-opacity="0.9"/>
+                  </linearGradient>
+                  <linearGradient id="metallicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#1E293B"/>
+                    <stop offset="50%" stop-color="#0F172A"/>
+                    <stop offset="100%" stop-color="#020617"/>
+                  </linearGradient>
+                  <filter id="neonGlowCyan" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="8" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                  <filter id="neonGlowPurple" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="10" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
+
+                <!-- Cyborg Head & Torso Geometry -->
+                <!-- Shoulders & Torso armor plates -->
+                <path d="M120 370 L70 410 L40 480 L360 480 L330 410 L280 370 Z" fill="url(#metallicGrad)" stroke="#397BFF" stroke-width="2"/>
+                <path d="M150 380 L200 440 L250 380" stroke="#00F5FF" stroke-width="2" fill="none"/>
+                <!-- Neck Biomechanical Column -->
+                <path d="M165 310 L160 370 L240 370 L235 310 Z" fill="#0B1026" stroke="#A855F7" stroke-width="2"/>
+                <line x1="180" y1="315" x2="180" y2="365" stroke="#00F5FF" stroke-dasharray="4 3"/>
+                <line x1="200" y1="315" x2="200" y2="365" stroke="#397BFF" stroke-width="2"/>
+                <line x1="220" y1="315" x2="220" y2="365" stroke="#00F5FF" stroke-dasharray="4 3"/>
+
+                <!-- Human-Machine Face Profile -->
+                <!-- Left half: Organic human silhouette -->
+                <path d="M200 80 C155 80 135 110 135 170 C135 220 150 250 170 280 L200 310 L230 280 C250 250 265 220 265 170 C265 110 245 80 200 80 Z" fill="#0B1026" stroke="#397BFF" stroke-width="2"/>
+
+                <!-- Cyborg Plating division line -->
+                <path d="M200 80 L195 130 L205 170 L198 220 L200 310" stroke="#00F5FF" stroke-width="2.5" filter="url(#neonGlowCyan)"/>
+
+                <!-- Right Side: Cybernetic Exoskeleton Plating -->
+                <path d="M205 100 L245 115 L255 160 L240 200 L230 270 L200 300" fill="rgba(0, 245, 255, 0.08)" stroke="#00F5FF" stroke-width="1.5"/>
+                <path d="M210 120 L240 130 L235 165 L210 170 Z" fill="rgba(168, 85, 247, 0.15)" stroke="#A855F7" stroke-width="1.5"/>
+
+                <!-- Cybernetic Bionic Eye (Right side) -->
+                <circle cx="225" cy="165" r="14" stroke="#00F5FF" stroke-width="2" fill="#050816"/>
+                <circle cx="225" cy="165" r="8" fill="#FF2A85" filter="url(#neonGlowCyan)"/>
+                <circle cx="225" cy="165" r="3" fill="#FFFFFF"/>
+                <!-- Eye Target Reticle lines -->
+                <line x1="205" y1="165" x2="245" y2="165" stroke="#00F5FF" stroke-width="1" stroke-dasharray="2 2"/>
+                <line x1="225" y1="145" x2="225" y2="185" stroke="#00F5FF" stroke-width="1" stroke-dasharray="2 2"/>
+
+                <!-- Organic Eye (Left side - stylized) -->
+                <path d="M160 165 Q175 155 190 165 Q175 175 160 165 Z" fill="none" stroke="#8E9EB5" stroke-width="1.5"/>
+                <circle cx="175" cy="165" r="4" fill="#397BFF"/>
+
+                <!-- Cranial Neural Nodes / Circuit Traces -->
+                <path d="M200 80 L230 65 L270 75 L290 100" stroke="#00F5FF" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+                <circle cx="290" cy="100" r="3" fill="#00F5FF"/>
+                <path d="M200 120 L260 130 L295 150" stroke="#A855F7" stroke-width="1.5" fill="none"/>
+                <circle cx="295" cy="150" r="3.5" fill="#A855F7"/>
+                <path d="M200 220 L245 240 L280 230" stroke="#00F5FF" stroke-width="1.5" fill="none"/>
+                <circle cx="280" cy="230" r="3" fill="#00F5FF"/>
+
+                <!-- Audio / Voice Modulator Jaw Grid -->
+                <line x1="185" y1="240" x2="215" y2="240" stroke="#00F5FF" stroke-width="1.5"/>
+                <line x1="187" y1="245" x2="213" y2="245" stroke="#397BFF" stroke-width="1.5"/>
+                <line x1="190" y1="250" x2="210" y2="250" stroke="#00F5FF" stroke-width="1.5"/>
+
+                <!-- Forehead Interface Core Hexagon -->
+                <polygon points="200,95 212,102 212,116 200,123 188,116 188,102" fill="#050816" stroke="#00F5FF" stroke-width="1.5"/>
+                <circle cx="200" cy="109" r="4" fill="#00F5FF" filter="url(#neonGlowCyan)"/>
+
+                <!-- Holographic Scanning Beam Effect -->
+                <rect x="50" y="150" width="300" height="2" fill="url(#cyberGrad1)" opacity="0.8" class="svg-scanbeam"/>
+              </svg>
+            </div>
+
+            <!-- Floating High-Tech Telemetry Cards -->
+            <div class="hud-badge hud-badge-top-left float-card">
+              <span class="hud-badge-dot"></span>
+              <span class="hud-badge-title">NEURAL LINK</span>
+              <span class="hud-badge-data text-cyan">ACTIVE // 100Gbps</span>
+            </div>
+
+            <div class="hud-badge hud-badge-top-right float-card-delay1">
+              <span class="hud-badge-icon">⚡</span>
+              <span class="hud-badge-title">SYNTHETIC CORE</span>
+              <span class="hud-badge-data text-purple">BIO-POWER 98%</span>
+            </div>
+
+            <div class="hud-badge hud-badge-bottom-left float-card-delay2">
+              <span class="hud-badge-title">AUGMENTATION</span>
+              <span class="hud-badge-data text-blue">CLASS IV PROTOTYPE</span>
+            </div>
+
+            <div class="hud-badge hud-badge-bottom-right float-card-delay3">
+              <span class="hud-badge-dot pulse-red"></span>
+              <span class="hud-badge-title">SYSTEM THREATS</span>
+              <span class="hud-badge-data text-cyan">0 DETECTED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span class="scroll-text">SYSTEM INITIALIZED // SCROLL</span>
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- ========================================================
+         SECTION C: ABOUT CYBERNEXUS
+         ======================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="cyber-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">// ARCHITECTURE &amp; ORIGIN</span>
+          </div>
+          <h2 class="section-title">BEYOND HUMAN LIMITS</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            CYBERNEXUS represents the intersection of human intelligence and advanced technology. Explore a world powered by artificial intelligence, robotics, automation and next-generation innovation.
+          </p>
+        </div>
+
+        <!-- 3 Information Cards -->
+        <div class="about-grid">
+          <!-- Card 1: Human Intelligence -->
+          <article class="cyber-card glass-panel">
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-br"></div>
+            <div class="card-header-meta">
+              <span class="card-code">NODE // 01</span>
+              <span class="card-status text-cyan">ORGANIC SYNAPSE</span>
+            </div>
+            <div class="card-icon-wrap icon-cyan">
+              <svg viewBox="0 0 48 48" fill="none" class="feature-icon">
+                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2" stroke-dasharray="5 3"/>
+                <path d="M16 20C16 16 19.5 13 24 13C28.5 13 32 16 32 20C32 23 30 25 28 26.5C26.5 27.6 26 29 26 31H22C22 28 23 26.5 24.5 25.4C26 24.3 27 22.5 27 20C27 18 25.5 17 24 17C22.5 17 21 18 21 20H16Z" fill="currentColor"/>
+                <circle cx="24" cy="35" r="2" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Human Intelligence</h3>
+            <p class="card-text">
+              The irreplaceable catalyst of intuition, emotional depth, and creative spark. We preserve organic consciousness while supercharging cognitive bandwidth through seamless bio-electronic neural bridges.
+            </p>
+            <div class="card-footer-metric">
+              <div class="metric-bar">
+                <div class="metric-fill" style="width: 88%;"></div>
+              </div>
+              <div class="metric-labels">
+                <span>Cognitive Expansion</span>
+                <span class="text-cyan">+880%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Artificial Intelligence -->
+          <article class="cyber-card glass-panel featured-card">
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-br"></div>
+            <div class="card-badge-top">CORE ENGINE</div>
+            <div class="card-header-meta">
+              <span class="card-code">NODE // 02</span>
+              <span class="card-status text-purple">SYNTHETIC COGNITION</span>
+            </div>
+            <div class="card-icon-wrap icon-purple">
+              <svg viewBox="0 0 48 48" fill="none" class="feature-icon">
+                <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+                <circle cx="24" cy="24" r="6" fill="currentColor"/>
+                <line x1="8" y1="16" x2="4" y2="16" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="24" x2="4" y2="24" stroke="currentColor" stroke-width="2"/>
+                <line x1="8" y1="32" x2="4" y2="32" stroke="currentColor" stroke-width="2"/>
+                <line x1="44" y1="16" x2="40" y2="16" stroke="currentColor" stroke-width="2"/>
+                <line x1="44" y1="24" x2="40" y2="24" stroke="currentColor" stroke-width="2"/>
+                <line x1="44" y1="32" x2="40" y2="32" stroke="currentColor" stroke-width="2"/>
+                <line x1="16" y1="8" x2="16" y2="4" stroke="currentColor" stroke-width="2"/>
+                <line x1="24" y1="8" x2="24" y2="4" stroke="currentColor" stroke-width="2"/>
+                <line x1="32" y1="8" x2="32" y2="4" stroke="currentColor" stroke-width="2"/>
+                <line x1="16" y1="44" x2="16" y2="40" stroke="currentColor" stroke-width="2"/>
+                <line x1="24" y1="44" x2="24" y2="40" stroke="currentColor" stroke-width="2"/>
+                <line x1="32" y1="44" x2="32" y2="40" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Artificial Intelligence</h3>
+            <p class="card-text">
+              Autonomous neural networks operating at exaflop computational thresholds. Continuous recursive self-optimization synthesizes terabytes of sensor telemetry into instantaneous strategic actions.
+            </p>
+            <div class="card-footer-metric">
+              <div class="metric-bar">
+                <div class="metric-fill metric-purple" style="width: 96%;"></div>
+              </div>
+              <div class="metric-labels">
+                <span>Model Convergence</span>
+                <span class="text-purple">99.98%</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Cybernetic Evolution -->
+          <article class="cyber-card glass-panel">
+            <div class="card-corner corner-tl"></div>
+            <div class="card-corner corner-br"></div>
+            <div class="card-header-meta">
+              <span class="card-code">NODE // 03</span>
+              <span class="card-status text-blue">BIOMECHANICAL UNITY</span>
+            </div>
+            <div class="card-icon-wrap icon-blue">
+              <svg viewBox="0 0 48 48" fill="none" class="feature-icon">
+                <polygon points="24,4 42,14 42,34 24,44 6,34 6,14" stroke="currentColor" stroke-width="2"/>
+                <line x1="24" y1="4" x2="24" y2="44" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <circle cx="24" cy="24" r="8" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="2"/>
+                <circle cx="24" cy="24" r="3" fill="#00F5FF"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Cybernetic Evolution</h3>
+            <p class="card-text">
+              The grand convergence of synthetic biology, carbon-nanotube prosthetics, and sensory augmentation. Transcending natural limitations to achieve immortality, speed, and endurance.
+            </p>
+            <div class="card-footer-metric">
+              <div class="metric-bar">
+                <div class="metric-fill metric-blue" style="width: 92%;"></div>
+              </div>
+              <div class="metric-labels">
+                <span>Bio-Integration</span>
+                <span class="text-blue">99.4%</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION D: TECHNOLOGY SHOWCASE
+         ======================================================== -->
+    <section class="section tech-section" id="technologies">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="cyber-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">// CORE PILLARS OF TOMORROW</span>
+          </div>
+          <h2 class="section-title">POWERING TOMORROW</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Four vanguard domains engineered to bridge biological architecture with next-generation algorithmic machinery.
+          </p>
+        </div>
+
+        <!-- 4 Technology Cards Grid -->
+        <div class="tech-grid">
+          <!-- Tech 1: Artificial Intelligence -->
+          <div class="tech-card glass-panel" data-tech="ai">
+            <div class="tech-card-glow"></div>
+            <div class="tech-header">
+              <div class="tech-icon-container">
+                <svg viewBox="0 0 36 36" fill="none" class="tech-svg">
+                  <path d="M18 4L22 14L32 18L22 22L18 32L14 22L4 18L14 14L18 4Z" stroke="#00F5FF" stroke-width="2" fill="rgba(0, 245, 255, 0.1)"/>
+                  <circle cx="18" cy="18" r="4" fill="#00F5FF"/>
+                </svg>
+              </div>
+              <div class="tech-index">01</div>
+            </div>
+            <h3 class="tech-title">ARTIFICIAL INTELLIGENCE</h3>
+            <p class="tech-description">
+              Intelligent systems transforming the way we think and interact. Adaptive neural networks that parse multidimensional sensor data in real-time.
+            </p>
+            <ul class="tech-spec-list">
+              <li><span class="spec-bullet">▸</span> Sub-second Autonomous Decision Engines</li>
+              <li><span class="spec-bullet">▸</span> Contextual Cognitive Mapping</li>
+              <li><span class="spec-bullet">▸</span> Self-Healing Algorithm Arrays</li>
+            </ul>
+            <div class="tech-footer">
+              <span class="tech-tag">NEURAL SYNAPSE</span>
+              <button class="tech-inspect-btn" data-tech-id="ai">TELEMETRY &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Tech 2: Robotics -->
+          <div class="tech-card glass-panel" data-tech="robotics">
+            <div class="tech-card-glow"></div>
+            <div class="tech-header">
+              <div class="tech-icon-container">
+                <svg viewBox="0 0 36 36" fill="none" class="tech-svg">
+                  <rect x="6" y="8" width="24" height="20" rx="3" stroke="#397BFF" stroke-width="2" fill="rgba(57, 123, 255, 0.1)"/>
+                  <circle cx="13" cy="16" r="3" fill="#397BFF"/>
+                  <circle cx="23" cy="16" r="3" fill="#397BFF"/>
+                  <line x1="12" y1="22" x2="24" y2="22" stroke="#397BFF" stroke-width="2"/>
+                  <line x1="18" y1="4" x2="18" y2="8" stroke="#397BFF" stroke-width="2"/>
+                </svg>
+              </div>
+              <div class="tech-index">02</div>
+            </div>
+            <h3 class="tech-title">ROBOTICS</h3>
+            <p class="tech-description">
+              Machines designed to perform complex tasks with precision. Carbon-fiber exoskeletons equipped with micro-hydraulic actuators and tactile sensor skin.
+            </p>
+            <ul class="tech-spec-list">
+              <li><span class="spec-bullet">▸</span> Sub-millimeter Surgical Kinematics</li>
+              <li><span class="spec-bullet">▸</span> Carbon-Nanotube Muscle Fibers</li>
+              <li><span class="spec-bullet">▸</span> Zero-Latency Haptic Teleoperation</li>
+            </ul>
+            <div class="tech-footer">
+              <span class="tech-tag">KINETICS</span>
+              <button class="tech-inspect-btn" data-tech-id="robotics">TELEMETRY &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Tech 3: Cybernetics -->
+          <div class="tech-card glass-panel" data-tech="cybernetics">
+            <div class="tech-card-glow"></div>
+            <div class="tech-header">
+              <div class="tech-icon-container">
+                <svg viewBox="0 0 36 36" fill="none" class="tech-svg">
+                  <path d="M8 18C8 12.477 12.477 8 18 8C23.523 8 28 12.477 28 18" stroke="#A855F7" stroke-width="2"/>
+                  <path d="M12 18C12 14.686 14.686 12 18 12C21.314 12 24 14.686 24 18" stroke="#A855F7" stroke-width="2" stroke-dasharray="2 2"/>
+                  <circle cx="18" cy="24" r="6" stroke="#A855F7" stroke-width="2" fill="rgba(168, 85, 247, 0.15)"/>
+                  <circle cx="18" cy="24" r="2" fill="#00F5FF"/>
+                </svg>
+              </div>
+              <div class="tech-index">03</div>
+            </div>
+            <h3 class="tech-title">CYBERNETICS</h3>
+            <p class="tech-description">
+              The integration of biological systems with advanced technology. Bionic sensory augments and high-density neural mesh implants connecting directly to nerves.
+            </p>
+            <ul class="tech-spec-list">
+              <li><span class="spec-bullet">▸</span> Direct Cortical Neural Interfacing</li>
+              <li><span class="spec-bullet">▸</span> Bio-Compatible Microelectronics</li>
+              <li><span class="spec-bullet">▸</span> Full-Spectrum Optical Augmentation</li>
+            </ul>
+            <div class="tech-footer">
+              <span class="tech-tag">BIO-SYNTHESIS</span>
+              <button class="tech-inspect-btn" data-tech-id="cybernetics">TELEMETRY &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Tech 4: Quantum Computing -->
+          <div class="tech-card glass-panel" data-tech="quantum">
+            <div class="tech-card-glow"></div>
+            <div class="tech-header">
+              <div class="tech-icon-container">
+                <svg viewBox="0 0 36 36" fill="none" class="tech-svg">
+                  <ellipse cx="18" cy="18" rx="14" ry="5" stroke="#00F5FF" stroke-width="1.5" transform="rotate(30 18 18)"/>
+                  <ellipse cx="18" cy="18" rx="14" ry="5" stroke="#397BFF" stroke-width="1.5" transform="rotate(-30 18 18)"/>
+                  <ellipse cx="18" cy="18" rx="14" ry="5" stroke="#A855F7" stroke-width="1.5" transform="rotate(90 18 18)"/>
+                  <circle cx="18" cy="18" r="3" fill="#FFFFFF"/>
+                </svg>
+              </div>
+              <div class="tech-index">04</div>
+            </div>
+            <h3 class="tech-title">QUANTUM COMPUTING</h3>
+            <p class="tech-description">
+              Exploring computational possibilities beyond conventional limits. Entangled qubits solving cryptographic and simulation hurdles at the speed of light.
+            </p>
+            <ul class="tech-spec-list">
+              <li><span class="spec-bullet">▸</span> 2,048-Qubit Cryogenic Processor Array</li>
+              <li><span class="spec-bullet">▸</span> Quantum Coherence Stabilization</li>
+              <li><span class="spec-bullet">▸</span> Post-Quantum Cryptographic Shielding</li>
+            </ul>
+            <div class="tech-footer">
+              <span class="tech-tag">HYPER-COMPUTE</span>
+              <button class="tech-inspect-btn" data-tech-id="quantum">TELEMETRY &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Tech Telemetry Modal / Drawer Display -->
+        <div class="tech-telemetry-hud glass-panel" id="tech-telemetry-hud" style="display: none;">
+          <div class="hud-top-bar">
+            <span class="hud-live-tag"><span class="badge-dot"></span> LIVE SYSTEM DIAGNOSTIC</span>
+            <button class="hud-close-btn" id="close-telemetry-hud" aria-label="Close telemetry preview">&times;</button>
+          </div>
+          <div class="hud-telemetry-content" id="telemetry-output">
+            <!-- Populated dynamically via script.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION E: EXPERIENCE SECTION
+         ======================================================== -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="cyber-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">// REAL-TIME SIMULATOR</span>
+          </div>
+          <h2 class="section-title">EXPERIENCE THE UNKNOWN</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Interact with the Cybernexus command simulator. Switch between active subsystems to monitor energy distribution, bandwidth throughput, and cybernetic resonance.
+          </p>
+        </div>
+
+        <!-- Interactive Experience Console Container -->
+        <div class="exp-terminal glass-panel">
+          <div class="exp-terminal-header">
+            <div class="terminal-dots">
+              <span class="dot-btn red"></span>
+              <span class="dot-btn yellow"></span>
+              <span class="dot-btn green"></span>
+            </div>
+            <div class="terminal-title">NEXUS CONSOLE // CORE CONTROL INTERFACE v4.9</div>
+            <div class="terminal-clock" id="system-time">00:00:00 UTC</div>
+          </div>
+
+          <div class="exp-terminal-body">
+            <!-- Left: Mode Switcher & Controls -->
+            <div class="exp-controls">
+              <span class="controls-label">SELECT OPERATIONAL PROTOCOL:</span>
+              <div class="exp-mode-buttons">
+                <button class="mode-btn active" data-mode="neural">
+                  <span class="mode-icon">🧠</span>
+                  <div class="mode-info">
+                    <strong>NEURAL UPLINK</strong>
+                    <small>Synaptic consciousness stream</small>
+                  </div>
+                </button>
+                <button class="mode-btn" data-mode="biomech">
+                  <span class="mode-icon">🦾</span>
+                  <div class="mode-info">
+                    <strong>BIOMECH KINETICS</strong>
+                    <small>Prosthetic force calibration</small>
+                  </div>
+                </button>
+                <button class="mode-btn" data-mode="quantum">
+                  <span class="mode-icon">⚛️</span>
+                  <div class="mode-info">
+                    <strong>QUANTUM SYNAPSE</strong>
+                    <small>Entangled computation matrix</small>
+                  </div>
+                </button>
+              </div>
+
+              <!-- Interactive Sliders -->
+              <div class="exp-slider-group">
+                <label for="overclock-slider" class="slider-label">
+                  <span>FREQUENCY OVERCLOCK</span>
+                  <span class="slider-val text-cyan" id="overclock-val">4.8 GHz</span>
+                </label>
+                <input type="range" id="overclock-slider" min="1.0" max="8.0" step="0.1" value="4.8" class="cyber-range">
+
+                <label for="bandwidth-slider" class="slider-label">
+                  <span>BANDWIDTH ALLOCATION</span>
+                  <span class="slider-val text-purple" id="bandwidth-val">78%</span>
+                </label>
+                <input type="range" id="bandwidth-slider" min="10" max="100" step="1" value="78" class="cyber-range range-purple">
+              </div>
+            </div>
+
+            <!-- Right: Interactive HUD Visualizer & Output Stream -->
+            <div class="exp-visualizer">
+              <div class="visualizer-screen">
+                <!-- Circular Radar Grid -->
+                <div class="radar-scope">
+                  <div class="radar-sweep-line"></div>
+                  <div class="radar-crosshair-h"></div>
+                  <div class="radar-crosshair-v"></div>
+                  <div class="radar-ring r1"></div>
+                  <div class="radar-ring r2"></div>
+                  <div class="radar-blip blip-1"></div>
+                  <div class="radar-blip blip-2"></div>
+                  <div class="radar-blip blip-3"></div>
+                </div>
+
+                <!-- Frequency Waveform Display -->
+                <div class="audio-waveform">
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                  <div class="wave-bar"></div>
+                </div>
+              </div>
+
+              <!-- Real-time Live Log Console -->
+              <div class="terminal-log-console" id="terminal-log">
+                <p class="log-line"><span class="log-time">[00:00:01]</span> <span class="log-tag tag-cyan">UPLINK</span> Handshake initialized with Cybernexus Node 01.</p>
+                <p class="log-line"><span class="log-time">[00:00:02]</span> <span class="log-tag tag-purple">AUTH</span> Neural cryptographic signature verified.</p>
+                <p class="log-line"><span class="log-time">[00:00:03]</span> <span class="log-tag tag-green">STATUS</span> Synchronized. Bandwidth streaming at peak throughput.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION F: STATISTICS SECTION
+         ======================================================== -->
+    <section class="section stats-section" id="statistics">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <div class="cyber-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">// METRICS OF PROGRESS</span>
+          </div>
+          <h2 class="section-title">THE METRICS OF EVOLUTION</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Quantifying the progression into the cybernetic era through synchronized benchmarks.
+          </p>
+        </div>
+
+        <!-- 4 Animated Numerical Counters -->
+        <div class="stats-grid">
+          <!-- Counter 1: 99% Innovation -->
+          <div class="stat-card glass-panel">
+            <div class="stat-corner corner-tl"></div>
+            <div class="stat-corner corner-br"></div>
+            <div class="stat-glow-radial"></div>
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="99" data-suffix="%">0%</span>
+            </div>
+            <h3 class="stat-label">Innovation</h3>
+            <p class="stat-subtext">Algorithmic breakthroughs in human-machine synthesis</p>
+            <div class="stat-sparkline spark-1"></div>
+          </div>
+
+          <!-- Counter 2: 24/7 Intelligence -->
+          <div class="stat-card glass-panel featured-stat">
+            <div class="stat-corner corner-tl"></div>
+            <div class="stat-corner corner-br"></div>
+            <div class="stat-glow-radial"></div>
+            <div class="stat-number-wrapper">
+              <span class="stat-number stat-text-glow" data-display="24/7">24/7</span>
+            </div>
+            <h3 class="stat-label">Intelligence</h3>
+            <p class="stat-subtext">Uninterrupted autonomous cognition &amp; predictive telemetry</p>
+            <div class="stat-sparkline spark-2"></div>
+          </div>
+
+          <!-- Counter 3: 100+ Possibilities -->
+          <div class="stat-card glass-panel">
+            <div class="stat-corner corner-tl"></div>
+            <div class="stat-corner corner-br"></div>
+            <div class="stat-glow-radial"></div>
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="100" data-suffix="+">0+</span>
+            </div>
+            <h3 class="stat-label">Possibilities</h3>
+            <p class="stat-subtext">New frontiers in robotics, neural links, and quantum reach</p>
+            <div class="stat-sparkline spark-3"></div>
+          </div>
+
+          <!-- Counter 4: Infinite Evolution -->
+          <div class="stat-card glass-panel">
+            <div class="stat-corner corner-tl"></div>
+            <div class="stat-corner corner-br"></div>
+            <div class="stat-glow-radial"></div>
+            <div class="stat-number-wrapper">
+              <span class="stat-number infinity-symbol" data-display="&infin;">&infin;</span>
+            </div>
+            <h3 class="stat-label">Infinite Evolution</h3>
+            <p class="stat-subtext">Perpetual upgrade cycles with zero biological ceiling</p>
+            <div class="stat-sparkline spark-4"></div>
+          </div>
+        </div>
+
+        <p class="stats-disclaimer text-center">
+          * Concept operational telemetry designed for the Techfest demonstration platform.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION G: CALL TO ACTION
+         ======================================================== -->
+    <section class="section cta-section" id="cta">
+      <div class="container">
+        <div class="cta-banner glass-panel">
+          <div class="cta-glow-circle circle-1"></div>
+          <div class="cta-glow-circle circle-2"></div>
+          <div class="cta-content">
+            <div class="cyber-badge">
+              <span class="badge-dot pulse-purple"></span>
+              <span class="badge-text">COMMENCING SYSTEM UPGRADE</span>
+            </div>
+            <h2 class="cta-title">READY TO ENTER THE FUTURE?</h2>
+            <p class="cta-description">
+              The next evolution begins with a single step. Explore what lies beyond the boundaries of today and unite with the cybernetic collective.
+            </p>
+            <div class="cta-action">
+              <a href="#contact" class="btn btn-primary btn-lg" id="join-evolution-btn">
+                <span class="btn-glow"></span>
+                <span class="btn-text">JOIN THE EVOLUTION</span>
+                <svg class="btn-arrow-icon" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECTION H: CONTACT SECTION (TRANSMISSION TERMINAL)
+         ======================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="cyber-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">// SECURE UPLINK FREQUENCY</span>
+          </div>
+          <h2 class="section-title">INITIALIZE TRANSMISSION</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Transmit an encrypted message to the Cybernexus engineering nexus. Frontend validation verified across all frequencies.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Left: Telemetry & Terminal Info -->
+          <div class="contact-info glass-panel">
+            <div class="terminal-bar">
+              <span class="terminal-tag">TRANSMISSION PARAMETERS</span>
+            </div>
+            <h3 class="contact-info-title">NEXUS COMMUNICATIONS HUB</h3>
+            <p class="contact-info-text">
+              Direct connection to the Techfest Campus Ambassador interface. Our node operates 24/7 across high-bandwidth cryptographic channels.
+            </p>
+
+            <div class="info-block-list">
+              <div class="info-block">
+                <div class="info-icon">📍</div>
+                <div class="info-meta">
+                  <span class="info-label">COORDINATES</span>
+                  <span class="info-val">Campus Ambassador Hub // Techfest Grid</span>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <div class="info-icon">⚡</div>
+                <div class="info-meta">
+                  <span class="info-label">PROTOCOL ENCRYPTION</span>
+                  <span class="info-val text-cyan">AES-512 QUANTUM RESISTANT</span>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <div class="info-icon">📡</div>
+                <div class="info-meta">
+                  <span class="info-label">COMM FREQUENCY</span>
+                  <span class="info-val text-purple">nexus.uplink@techfest.future</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Frontend Demo Disclaimer Box -->
+            <div class="demo-notice-box">
+              <span class="notice-badge">DEMO NOTICE</span>
+              <p>
+                This contact interface features interactive frontend verification and simulated transmission acknowledgment for the Techfest presentation. No external server transfer occurs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Cyberpunk Form -->
+          <div class="contact-form-wrapper glass-panel">
+            <form id="cyber-contact-form" class="cyber-form" novalidate>
+              <!-- Name Field -->
+              <div class="form-group">
+                <label for="user-name" class="form-label">
+                  OPERATIVE NAME <span class="required-star">*</span>
+                </label>
+                <div class="input-container">
+                  <input type="text" id="user-name" name="name" class="cyber-input" placeholder="e.g. Alex Vance" required minlength="2">
+                  <span class="input-focus-line"></span>
+                </div>
+                <span class="field-error" id="name-error">Please enter at least 2 characters.</span>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group">
+                <label for="user-email" class="form-label">
+                  COMM FREQUENCY (EMAIL) <span class="required-star">*</span>
+                </label>
+                <div class="input-container">
+                  <input type="email" id="user-email" name="email" class="cyber-input" placeholder="operative@nexus.future" required>
+                  <span class="input-focus-line"></span>
+                </div>
+                <span class="field-error" id="email-error">Please enter a valid frequency address (e.g. name@domain.com).</span>
+              </div>
+
+              <!-- Sector Selection Dropdown -->
+              <div class="form-group">
+                <label for="user-sector" class="form-label">
+                  TARGET SECTOR OF INTEREST
+                </label>
+                <div class="input-container select-container">
+                  <select id="user-sector" name="sector" class="cyber-input cyber-select">
+                    <option value="ai">Artificial Intelligence &amp; Cognitive Arrays</option>
+                    <option value="robotics">Robotics &amp; Autonomous Kinetic Systems</option>
+                    <option value="cybernetics" selected>Cybernetic Bionics &amp; Neural Linking</option>
+                    <option value="quantum">Quantum Computing &amp; Cryptography</option>
+                    <option value="techfest">Techfest Campus Ambassador Project</option>
+                  </select>
+                  <span class="input-focus-line"></span>
+                  <div class="select-arrow">&#9662;</div>
+                </div>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group">
+                <label for="user-message" class="form-label">
+                  TRANSMISSION PACKET (MESSAGE) <span class="required-star">*</span>
+                </label>
+                <div class="input-container">
+                  <textarea id="user-message" name="message" class="cyber-input cyber-textarea" rows="4" placeholder="Transmit thoughts, collaborative proposals, or inquiries..." required minlength="10"></textarea>
+                  <span class="input-focus-line"></span>
+                </div>
+                <span class="field-error" id="message-error">Transmission packet must contain at least 10 characters.</span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="submit-btn">
+                <span class="btn-glow"></span>
+                <span class="btn-text">TRANSMIT PACKET</span>
+                <svg class="btn-icon" viewBox="0 0 20 20" fill="none">
+                  <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </form>
+
+            <!-- Success Confirmation HUD Box (Hidden initially) -->
+            <div class="submission-success-hud" id="submission-success" style="display: none;">
+              <div class="success-icon-wrap">
+                <svg viewBox="0 0 48 48" fill="none" class="success-check-svg">
+                  <circle cx="24" cy="24" r="22" stroke="#00F5FF" stroke-width="2" class="success-circle"/>
+                  <path d="M14 24L21 31L34 17" stroke="#00F5FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="success-check"/>
+                </svg>
+              </div>
+              <h4 class="success-title">TRANSMISSION CONFIRMED</h4>
+              <p class="success-id">PACKET RECEIPT: <span class="text-cyan" id="receipt-id">#NX-9042-88</span></p>
+              <p class="success-desc">
+                Your transmission has been packetized and securely received by the local client simulator.
+              </p>
+              <div class="success-meta-box">
+                <small><strong>STATUS:</strong> VERIFIED FRONTEND SIMULATION</small><br>
+                <small><strong>TIMESTAMP:</strong> <span id="receipt-timestamp">CURRENT_TIME</span></small>
+              </div>
+              <button type="button" class="btn btn-outline-cyan btn-sm" id="reset-form-btn">SEND ANOTHER TRANSMISSION</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       SECTION I: FOOTER
+       ======================================================== -->
+  <footer class="cyber-footer" id="footer">
+    <div class="footer-top-accent"></div>
+    <div class="container footer-container">
+      <!-- Column 1: Brand & Bio -->
+      <div class="footer-col footer-col-brand">
+        <a href="#hero" class="nav-logo footer-logo">
+          <div class="logo-symbol">
+            <svg viewBox="0 0 44 44" fill="none" class="logo-svg">
+              <polygon points="22,3 41,13 41,31 22,41 3,31 3,13" stroke="#00F5FF" stroke-width="2"/>
+              <circle cx="22" cy="22" r="5" fill="#00F5FF"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            CYBER<span class="highlight-cyan">NEXUS</span>
+          </div>
+        </a>
+        <p class="footer-tagline">
+          ENTER THE FUTURE. REDEFINE HUMANITY.
+        </p>
+        <p class="footer-desc">
+          A futuristic digital platform exploring the confluence of human consciousness, artificial intelligence, robotics, and cybernetic biomechanics.
+        </p>
+        <div class="footer-status-pill">
+          <span class="badge-dot pulse-cyan"></span>
+          <span>NEXUS NODE v4.2 // STATUS: ONLINE</span>
+        </div>
+      </div>
+
+      <!-- Column 2: Navigation Links -->
+      <div class="footer-col">
+        <h4 class="footer-title">NAVIGATION</h4>
+        <ul class="footer-links">
+          <li><a href="#hero" class="footer-link">Home (Nexus Core)</a></li>
+          <li><a href="#about" class="footer-link">About Cybernexus</a></li>
+          <li><a href="#technologies" class="footer-link">Technology Showcase</a></li>
+          <li><a href="#experience" class="footer-link">Experience Simulator</a></li>
+          <li><a href="#statistics" class="footer-link">Telemetry Benchmarks</a></li>
+          <li><a href="#contact" class="footer-link">Encrypted Uplink</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Technologies -->
+      <div class="footer-col">
+        <h4 class="footer-title">DOMAINS</h4>
+        <ul class="footer-links">
+          <li><a href="#technologies" class="footer-link">Neural Artificial Intelligence</a></li>
+          <li><a href="#technologies" class="footer-link">Kinetic Autonomous Robotics</a></li>
+          <li><a href="#technologies" class="footer-link">Cybernetic Bio-Synthesis</a></li>
+          <li><a href="#technologies" class="footer-link">Quantum Cryo-Computing</a></li>
+          <li><a href="#experience" class="footer-link">Neural Link Protocols</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Social Links & Techfest Project Badge -->
+      <div class="footer-col">
+        <h4 class="footer-title">NETWORK MATRIX</h4>
+        <div class="footer-social-links">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Repository">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.46 1.46 0 1 0 0-2.92 1.46 1.46 0 0 0 0 2.92M7.86 18.5V10.13H5.07V18.5h2.79z"/></svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Discord">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          </a>
+        </div>
+        <div class="techfest-attribution">
+          <small class="techfest-tag">TECHFEST CAMPUS AMBASSADOR</small>
+          <p class="techfest-author">Engineered by a 2nd Year Computer Engineering Student</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar & Copyright -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text">
+          &copy; 2026 CYBERNEXUS. All Rights Reserved. Engineered for Techfest Campus Ambassador Program.
+        </p>
+        <div class="footer-bottom-links">
+          <span class="system-ping"><span class="ping-dot"></span> PING: 12ms</span>
+          <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top">
+            <span>BACK TO TOP</span>
+            <svg viewBox="0 0 16 16" fill="none" class="back-to-top-arrow">
+              <path d="M8 13V3M8 3L3.5 7.5M8 3L12.5 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+
