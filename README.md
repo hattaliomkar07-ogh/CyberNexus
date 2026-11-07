@@ -1,7 +1,7 @@
 # CYBERNEXUS // ENTER THE FUTURE. REDEFINE HUMANITY.
 
 > **Techfest Campus Ambassador Program — Web Development Task**  
-> **Author:** 2nd Year Computer Engineering Student  
+> **Author:** Omkar Hattali   
 > **Theme:** Futuristic Cyborg & Advanced Cybernetic Platform  
 > **Tech Stack:** HTML5, CSS3, Vanilla JavaScript (Zero External Frameworks)
 
